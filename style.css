@@ -41,7 +41,7 @@ img {
 
 a {
   color: var(--primary-light);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 3px;
 }
 
@@ -298,10 +298,10 @@ a:hover {
   font-weight: 800;
   font-size: clamp(2rem, 8vw, 4rem);
   line-height: 1;
-  color: var(--accent);
+  color: #ffd425;
   margin-bottom: clamp(2rem, 5vw, 3rem);
   text-transform: lowercase;
-  text-align: left;
+  text-align: center;
 }
 
 .section-heading.center {
@@ -549,4 +549,3 @@ footer {
   }
 }
 
-.section-heading {}
