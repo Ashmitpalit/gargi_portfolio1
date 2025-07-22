@@ -354,7 +354,7 @@ a:hover {
 }
 
 .skills-list li::before {
-  content: "•";
+  
   position: absolute;
   left: 0;
   top: 0;
@@ -548,4 +548,3 @@ footer {
     animation: none;
   }
 }
-
