@@ -3,160 +3,325 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gargi Biswas | UI/UX Designer Portfolio</title>
+  <title>Gargi Biswas | Creative UI/UX Designer & Digital Artist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio website of Gargi Biswas, UI/UX Designer based in Jaipur, India.">
+  <meta name="description"
+    content="Portfolio of Gargi Biswas - Creative UI/UX Designer crafting immersive digital experiences with artistic vision.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="top">
+<body>
+  <!-- 3D Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
 
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="#top" class="logo">Gargi Biswas</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
-        aria-label="Toggle navigation"><span></span></button>
-      <nav class="nav" id="primary-nav" role="navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a class="resume-btn" target="_blank" rel="noopener"
-          href="https://drive.google.com/file/d/1ZrY6ffWz2Z7Y4W9il4QBovtUuIS5pwZF/view?usp=sharing">Resume</a>
-      </nav>
-      <div class="header-socials">
-        <a href="https://www.behance.net/gargibiswas3" target="_blank" aria-label="Behance">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M9.5 9.804c..." />
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/gargi-biswas-6b5011249/" target="_blank" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M19 0h-14C2.24..." />
-          </svg>
-        </a>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">G</div>
+      <div class="loading-text">Loading Creative Universe</div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-inner wrapper">
-        <div class="hero-text reveal">
-          <h1>Hello, I am <strong>Gargi Biswas</strong></h1>
-          <p class="subtitle">A Passionate UI/UX Designer Crafting Delightful &amp; User-Centered Digital Experience</p>
-          <p class="location">based in Jaipur, India.</p>
-          <a class="hero-btn" target="_blank" rel="noopener"
-            href="https://drive.google.com/file/d/1ZrY6ffWz2Z7Y4W9il4QBovtUuIS5pwZF/view?usp=sharing">Download
-            Resume</a>
+  <!-- Navigation -->
+  <nav class="nav-3d">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Gargi</span>
+        <span class="logo-dot"></span>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">UI/UX Designer & Digital Artist</div>
+          <h1 class="hero-title">
+            <span class="title-line">Creating</span>
+            <span class="title-line highlight">Digital</span>
+            <span class="title-line">Experiences</span>
+          </h1>
+          <p class="hero-description">
+            I craft immersive interfaces that blend functionality with artistic vision,
+            turning user needs into beautiful, intuitive digital solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-secondary">Let's Connect</a>
+          </div>
         </div>
-        <div class="hero-pic-wrap reveal">
-          <img src="assets/hero-profile.jpg" alt="Portrait of Gargi Biswas" class="hero-pic" loading="lazy">
+        <div class="hero-visual">
+          <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+          </div>
+          <div class="hero-image-container">
+            <img src="assets/hero-profile.jpg" alt="Gargi Biswas" class="hero-image">
+            <div class="image-glow"></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2 class="section-heading">about.</h2>
-      <div class="about-content wrapper reveal">
-        <p>Design, for me, is about empathy. I began my UI/UX journey with a simple question: How can I make digital
-          experiences more human? I’ve worked on conceptual projects involving user research, low-to-high fidelity
-          design, and usability testing. Skilled in Figma, Canva, Adobe XD, and Photoshop.</p>
-        <div class="edu-block">
-          <span class="edu-bullet">●</span>
-          <strong>2022–2026</strong><br>
-          <strong>University of Engineering &amp; Management, Jaipur.</strong>
-          <small>Currently pursuing B.Tech in Computer Science</small>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              I'm a passionate designer who believes that great design is invisible yet unforgettable.
+              My journey in UI/UX design is driven by curiosity, empathy, and a deep appreciation for art.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="Figma">
+                <div class="skill-icon">🎨</div>
+                <div class="skill-name">Figma</div>
+              </div>
+              <div class="skill-item" data-skill="User Research">
+                <div class="skill-icon">🔍</div>
+                <div class="skill-name">Research</div>
+              </div>
+              <div class="skill-item" data-skill="Prototyping">
+                <div class="skill-icon">⚡</div>
+                <div class="skill-name">Prototyping</div>
+              </div>
+              <div class="skill-item" data-skill="UI Design">
+                <div class="skill-icon">✨</div>
+                <div class="skill-name">UI Design</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2 class="section-heading">skills.</h2>
-      <ul class="skills-list wrapper reveal">
-        <li>UI/UX Design: Figma, Responsive Design, Wireframing</li>
-        <li>User Research: Personas, Flows, Usability Testing</li>
-        <li>Prototyping: Low-Fi &amp; High-Fi Prototypes, InVision</li>
-        <li>Collaboration: Agile, Feedback Incorporation, Case Studies</li>
-        <li>Additional Tools: Canva, Photoshop, Illustrator, Adobe XD</li>
-      </ul>
-    </section>
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Work</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="work-grid">
+          <article class="work-item" data-category="web">
+            <div class="work-image">
+              <img src="assets/proj-travel.jpg" alt="Travel Website Design">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>Travel Experience Platform</h3>
+                  <p>Mobile-first design with immersive user journeys</p>
+                  <a href="https://www.figma.com/design/9IdbYRaaVt4Keq9ccFyeTb/Untitled" class="work-link">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Travel Experience Platform</h3>
+              <p>Mobile-first design with immersive user journeys</p>
+              <div class="work-tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">Research</span>
+              </div>
+            </div>
+          </article>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2 class="section-heading center">projects.</h2>
-      <div class="projects-grid wrapper reveal">
-        <article class="project-card">
-          <img src="assets/proj-travel.jpg" alt="Responsive Travel Website preview">
-          <h3>Responsive Travel Website</h3>
-          <p>Mobile-first travel experience with responsive layouts, research-driven flows, and accessible UI.</p>
-          <div class="project-actions">
-            <a target="_blank" href="https://www.figma.com/design/9IdbYRaaVt4Keq9ccFyeTb/Untitled">View</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="assets/proj-myntra.jpg" alt="Myntra redesign preview">
-          <h3>Myntra App Redesign</h3>
-          <p>Gen Z‑focused redesign with personas, journey mapping, and streamlined navigation.</p>
-          <div class="project-actions">
-            <a target="_blank" href="https://www.figma.com/design/kVeQcWaObVnMPWVrfeeTWn/Myntra-FWD">View</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="assets/proj-saas.jpg" alt="SaaS dashboard preview">
-          <h3>SaaS Dashboard Design</h3>
-          <p>Scalable dashboard system with reusable components, data visuals, and collaborative workflows.</p>
-          <div class="project-actions">
-            <a target="_blank" href="https://www.figma.com/design/1EfHE5ZZWMQb1XMeXObXZE/Untitled">View</a>
-          </div>
-        </article>
+          <article class="work-item" data-category="app">
+            <div class="work-image">
+              <img src="assets/proj-myntra.jpg" alt="Myntra App Redesign">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>Myntra App Redesign</h3>
+                  <p>Gen Z-focused redesign with streamlined navigation</p>
+                  <a href="https://www.figma.com/design/kVeQcWaObVnMPWVrfeeTWn/Myntra-FWD" class="work-link">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Myntra App Redesign</h3>
+              <p>Gen Z-focused redesign with streamlined navigation</p>
+              <div class="work-tags">
+                <span class="tag">App Design</span>
+                <span class="tag">Redesign</span>
+                <span class="tag">User Testing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item" data-category="dashboard">
+            <div class="work-image">
+              <img src="assets/proj-saas.jpg" alt="SaaS Dashboard">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>SaaS Dashboard System</h3>
+                  <p>Scalable dashboard with reusable components</p>
+                  <a href="https://www.figma.com/design/1EfHE5ZZWMQb1XMeXObXZE/Untitled" class="work-link">View
+                    Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>SaaS Dashboard System</h3>
+              <p>Scalable dashboard with reusable components</p>
+              <div class="work-tags">
+                <span class="tag">Dashboard</span>
+                <span class="tag">SaaS</span>
+                <span class="tag">Components</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2 class="section-heading">contact.</h2>
-      <div class="contact-grid wrapper reveal">
-        <div class="contact-details">
-          <h3>Got a Vision? Let’s Design It.</h3>
-          <p>Have an idea, project, or just want to talk design? I’m a message away.</p>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 12.713l11.985-9.713H.015L12 12.713zM12 14.587L.006 4.5v15h23.988v-15L12 14.587z" />
-            </svg>
-            <a href="mailto:gargibiswas1382003@gmail.com">gargibiswas1382003@gmail.com</a>
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">My Design Process</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Discover</h3>
+              <p>Understanding user needs through research and empathy</p>
+            </div>
           </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.29 22 2 13.71 2 3a1 1 0 011-1h4.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
-            </svg>
-            <a href="tel:+917005476376">+91 7005476376</a>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Define</h3>
+              <p>Creating user personas and journey maps</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Design</h3>
+              <p>Wireframing and prototyping solutions</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Deliver</h3>
+              <p>Testing and iterating for perfection</p>
+            </div>
           </div>
         </div>
-        <div class="contact-illus">
-          <img src="assets/contact-illus.svg" alt="">
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Create Together</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Ready to bring your vision to life?</h3>
+            <p>I'm always excited to collaborate on new projects and explore creative possibilities.</p>
+            <div class="contact-methods">
+              <a href="mailto:gargibiswas1382003@gmail.com" class="contact-method">
+                <div class="method-icon">✉️</div>
+                <div class="method-details">
+                  <div class="method-label">Email</div>
+                  <div class="method-value">gargibiswas1382003@gmail.com</div>
+                </div>
+              </a>
+              <a href="tel:+917005476376" class="contact-method">
+                <div class="method-icon">📱</div>
+                <div class="method-details">
+                  <div class="method-label">Phone</div>
+                  <div class="method-value">+91 7005476376</div>
+                </div>
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.behance.net/gargibiswas3" target="_blank" class="social-link">Behance</a>
+              <a href="https://www.linkedin.com/in/gargi-biswas-6b5011249/" target="_blank"
+                class="social-link">LinkedIn</a>
+            </div>
+          </div>
+          <div class="contact-visual">
+            <div class="contact-illustration">
+              <div class="floating-element"></div>
+              <div class="floating-element"></div>
+              <div class="floating-element"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-socials">
-      <a href="https://www.behance.net/gargibiswas3" target="_blank">Behance</a>
-      <!--<a href="https://dribbble.com/gargi-biswas" target="_blank">Dribbble</a>-->
-      <a href="https://www.linkedin.com/in/gargi-biswas-6b5011249/" target="_blank">LinkedIn</a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Gargi Biswas</div>
+      <div class="footer-text">Creating digital experiences that inspire and engage</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <p>© 2025 Gargi Biswas. All rights reserved.</p>
-    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 
