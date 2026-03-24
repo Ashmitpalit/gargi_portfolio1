@@ -1,5 +1,13 @@
 /* Gargi Portfolio Interactions */
 
+const header = document.querySelector('.site-header');
+function updateHeaderScroll() {
+  if (!header) return;
+  header.classList.toggle('is-scrolled', window.scrollY > 24);
+}
+updateHeaderScroll();
+window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#primary-nav');
